@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Asegúrate de que esta importación sea correcta según tu configuración de estilos.
+import TransactionForm from './components/TransactionForm'; // Ajusta la ruta si es necesario.
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Aplicación de Transacciones Ethereum</h1>
       </header>
+      <main>
+        <TransactionForm />
+      </main>
     </div>
   );
 }
